@@ -13,7 +13,9 @@ public class quitter : MonoBehaviour
         btn.onClick.AddListener(Quit);
     }
 
-    
+    /// <summary>
+    /// Permet lors du clic sur le bouton Quitter de supprimer coté Android et Pc de remettre les ressources à 0
+    /// </summary>
     void Quit()
     {
 

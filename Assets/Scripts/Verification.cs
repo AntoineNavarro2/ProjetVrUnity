@@ -50,7 +50,9 @@ public class Verification : MonoBehaviour
 
     }
 
-
+    /// <summary>
+    /// Permet de lancer le serveur et afficher les menus
+    /// </summary>
     void SetupServer()
     {
         CurrentNetworkManager.StartServer();
@@ -58,6 +60,10 @@ public class Verification : MonoBehaviour
         Debug.Log("Server OK!");
 
     }
+
+    /// <summary>
+    /// Permet de lancer la synchronisation 
+    /// </summary>
     void SetupClient()
     {
         discovery.StartDiscovery();
@@ -65,14 +71,20 @@ public class Verification : MonoBehaviour
 
     }
 
-
+    /// <summary>
+    /// Permet de connecter le client au serveur
+    /// </summary>
+    /// <param name="inf">Prends en paramètre l'url du serveur</param>
     public void OnDiscoveredServer(ServerResponse inf)
     {
 
         Connect(inf);
 
     }
-
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="inf">Prends en paramètre la réponse du serveur</param>
     void Connect(ServerResponse inf)
     {
         discovery.StopDiscovery();

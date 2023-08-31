@@ -6,7 +6,12 @@ using UnityEngine.UI;
 
 public class Niveau : MonoBehaviour
 {
-    
+    /// <summary>
+    /// Permet de selectionner le niveau et l'exposition du patient à une phobie
+    /// </summary>
+    /// <param name="type_niveau">Le type de peur</param>
+    /// <param name="difficulte_niveau">Le niveau d'expostion</param>
+    /// <returns>Renvoie la skybox et le son choisi</returns>
     public (string, string) ChoixNiveau(string type_niveau, int difficulte_niveau)
     {
         string skybox_nom = "";
@@ -199,6 +204,9 @@ public class Niveau : MonoBehaviour
 
     }
 
+    /// <summary>
+    /// Permet de charger les différentes ressources et envoie les instructions au client
+    /// </summary>
     void Load()
     {
         var difficulte_niveau = Mathf.RoundToInt(difficulte.value * (maxi - mini) + mini);

@@ -5,8 +5,6 @@ using UnityEngine;
 public class gyroscope : MonoBehaviour
 {
   
-
-   // Vector3 rota;
     private bool gyroEnable;
     private UnityEngine.Gyroscope gyro;
     private GameObject gyroControl;
@@ -14,7 +12,7 @@ public class gyroscope : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       // rota = Vector3.zero;
+       
            
        gyroEnable = EnableGyro();
       initalRotation = Quaternion.Euler(90f,0f,0f);
@@ -23,7 +21,6 @@ public class gyroscope : MonoBehaviour
     }
    
  
-
     // Update is called once per frame
     void Update()
     {   
@@ -34,14 +31,12 @@ public class gyroscope : MonoBehaviour
             Quaternion calculatedRotation = initalRotation * gyroQuaternion;
             transform.rotation = calculatedRotation;
         }
-        /*
-       rota.x = -Input.gyro.rotationRateUnbiased.x;
-        rota.y = -Input.gyro.rotationRateUnbiased.y;
-        rota.z = -Input.gyro.rotationRateUnbiased.z;
-        
-        transform.Rotate ( rota.x,  rota.y,  rota.z);*/
-        
+      
     }
+    /// <summary>
+    /// Permet de vérifier si le Gyroscope est possible si oui il active 
+    /// </summary>
+    /// <returns>Retourne un booléen True ou False</returns>
      private bool EnableGyro()
     {
 
@@ -61,6 +56,11 @@ public class gyroscope : MonoBehaviour
         }
         return false;
     }
+    /// <summary>
+    /// Permet de convertir la valeur du gyroscope du téléphone pour que Unity l'interprètre
+    /// </summary>
+    /// <param name="q">Prends en paramètre </param>
+    /// <returns>Retourne la valeur du gyroscope</returns>
     private static Quaternion GyroToUnity(Quaternion q)
     {
         return new Quaternion(q.x, q.y, -q.z, -q.w);

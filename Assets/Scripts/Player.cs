@@ -5,6 +5,9 @@ using UnityEngine;
 
 public class Player : NetworkBehaviour
 {
+   /// <summary>
+   /// Permet de bouger la caméra en mode débug
+   /// </summary>
    public override void OnStartLocalPlayer()
         {
            Camera.main.transform.SetParent(transform);

@@ -49,6 +49,10 @@ public class check : MonoBehaviour
         return msg;
     }
 
+    /// <summary>
+    /// Permet de changer le texte qui s'affiche lors du choix du niveau de l'expostion
+    /// </summary>
+    /// <param name="value">Prends en paramètre le curseur de la scollbar</param>
     private void OnScrollbarValue(float value)
     {
         int currentStep = Mathf.RoundToInt(value * (maxi - mini) + mini);

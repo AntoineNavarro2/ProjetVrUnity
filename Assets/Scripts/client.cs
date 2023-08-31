@@ -6,6 +6,11 @@ using Mirror;
 public class client : NetworkBehaviour
 {
     private  GameObject la_phobie = null;
+    /// <summary>
+    /// Permet de mettre à jour la skybox et le son
+    /// </summary>
+    /// <param name="nom_son">Le nom du son à mettre à jour</param>
+    /// <param name="nom_skybox">Le nom de la skybox à mettre à jour</param>
     [ClientRpc]
     public void UpdateQuelqueChose(string nom_son, string nom_skybox)
     {
@@ -26,7 +31,9 @@ public class client : NetworkBehaviour
     }
 
 
-
+    /// <summary>
+    /// Permet de supprimer la skybox, le son et la peur s'il est présente
+    /// </summary>
     [ClientRpc]
     public void DeleteData()
     {
@@ -49,8 +56,12 @@ public class client : NetworkBehaviour
         
     }
 
+    /// <summary>
+    /// Permet de mettre à jour le modèle 3d
+    /// </summary>
+    /// <param name="type_niveau">Le type de peur</param>
+    /// <param name="difficulte">Le niveau d'exposition adapter</param>
     [ClientRpc]
-
     public void UpdateGameObject(string type_niveau, int difficulte)
     {
         Debug.Log("Client Only OBJECT");
@@ -167,7 +178,11 @@ public class client : NetworkBehaviour
 
     }
 
-
+    /// <summary>
+    /// Permet au serveur de modifier le modèle 3d
+    /// </summary>
+    /// <param name="type_niveau">Permet au serveur d'indiquer le type de niveau à mettre à jour</param>
+    /// <param name="difficulte">Permet au serveur d'indiquer le niveau d'expostion à mettre à jour</param>
     public void UpdatePhobieObject(string type_niveau, int difficulte)
     {
         Debug.Log("UpdataData From Client Phobie");
@@ -175,6 +190,11 @@ public class client : NetworkBehaviour
 
     }
 
+    /// <summary>
+    /// Permet de mettre à jour les ressources skybox et son
+    /// </summary>
+    /// <param name="nom_son">Permet au serveur d'indiquer le son à mettre à jour</param>
+    /// <param name="nom_skybox">Permet au serveur d'indiquer la skybox à mettre à jour</param>
     public void UpdateData(string nom_son, string nom_skybox)
     {
         Debug.Log("UpdataData From Client Son");
