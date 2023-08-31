@@ -97,7 +97,7 @@ public class client : NetworkBehaviour
               if (difficulte== 5)
                 {
                     var snakePrefab = Resources.Load($"3d/snake") as GameObject;
-                    Vector3 snakePosition = new Vector3(10, 0, 1);
+                    Vector3 snakePosition = new Vector3(18, -25, 60);
                     la_phobie = Instantiate(snakePrefab);
                     la_phobie.name = "SnakeClient";
                     la_phobie.transform.position = snakePosition;
@@ -105,7 +105,7 @@ public class client : NetworkBehaviour
                if(difficulte==6)
                {
                 var snakePrefab = Resources.Load($"3d/snake") as GameObject;
-                Vector3 snakePosition = new Vector3(10, 1, 0);
+                Vector3 snakePosition = new Vector3(18, -25, 60);
                 la_phobie = Instantiate(snakePrefab);
                 la_phobie.name = "SnakeClient";
                 la_phobie.transform.position = snakePosition;
@@ -113,7 +113,7 @@ public class client : NetworkBehaviour
                 if(difficulte==7)
                {
                 var snakePrefab = Resources.Load($"3d/snake") as GameObject;
-                Vector3 snakePosition = new Vector3(10, 1, 0);
+                Vector3 snakePosition =new Vector3(18, -25, 60);
                 la_phobie = Instantiate(snakePrefab);
                 la_phobie.name = "SnakeClient";
                 la_phobie.transform.position = snakePosition;
@@ -121,7 +121,7 @@ public class client : NetworkBehaviour
                 if(difficulte==8)
                {
                 var snakePrefab = Resources.Load($"3d/snake") as GameObject;
-                Vector3 snakePosition = new Vector3(10, 1, 0);
+                Vector3 snakePosition = new Vector3(18, -25, 60);
                 la_phobie = Instantiate(snakePrefab);
                 la_phobie.name = "SnakeClient";
                 la_phobie.transform.position = snakePosition;

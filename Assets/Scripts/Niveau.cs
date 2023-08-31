@@ -68,7 +68,7 @@ public class Niveau : MonoBehaviour
                 {
                     skybox_nom = "rassurantsnake";
                     var snakePrefab = Resources.Load($"3d/snake") as GameObject;
-                    Vector3 snakePosition = new Vector3(1, -100, 0);
+                    Vector3 snakePosition = new Vector3(18, -25, 60);
                     la_phobie = Instantiate(snakePrefab);
                     la_phobie.name = "SnakeServer";
                     la_phobie.transform.position = snakePosition;
@@ -76,7 +76,7 @@ public class Niveau : MonoBehaviour
                 if(difficulte_niveau ==6)
                 {
                 var snakePrefab = Resources.Load($"3d/snake") as GameObject;
-                Vector3 snakePosition = new Vector3(10, 1, 0);
+                Vector3 snakePosition = new Vector3(18, -25, 60);
                 la_phobie = Instantiate(snakePrefab);
                 la_phobie.name = "SnakeServer";
                 la_phobie.transform.position = snakePosition;
@@ -84,7 +84,7 @@ public class Niveau : MonoBehaviour
                 if(difficulte_niveau ==7)
                 {
                 var snakePrefab = Resources.Load($"3d/snake") as GameObject;
-                Vector3 snakePosition = new Vector3(10, 1, 0);
+                Vector3 snakePosition = new Vector3(18, -25, 60);
                 la_phobie = Instantiate(snakePrefab);
                 la_phobie.name = "SnakeServer";
                 la_phobie.transform.position = snakePosition;
@@ -92,7 +92,7 @@ public class Niveau : MonoBehaviour
                  if(difficulte_niveau ==8)
                 {
                 var snakePrefab = Resources.Load($"3d/snake") as GameObject;
-                Vector3 snakePosition = new Vector3(10, 1, 0);
+                Vector3 snakePosition = new Vector3(18, -25, 60);
                 la_phobie = Instantiate(snakePrefab);
                 la_phobie.name = "SnakeServer";
                 la_phobie.transform.position = snakePosition;
