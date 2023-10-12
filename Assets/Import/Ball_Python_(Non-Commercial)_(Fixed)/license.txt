@@ -1,0 +1,11 @@
+Model Information:
+* title:	Ball Python (Non-Commercial) (Fixed)
+* source:	https://sketchfab.com/3d-models/ball-python-non-commercial-fixed-5b2b62125850484589d3f4c5aef3ba9b
+* author:	Nyilonelycompany (https://sketchfab.com/Nyilonelycompany)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Ball Python (Non-Commercial) (Fixed)" (https://sketchfab.com/3d-models/ball-python-non-commercial-fixed-5b2b62125850484589d3f4c5aef3ba9b) by Nyilonelycompany (https://sketchfab.com/Nyilonelycompany) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
